@@ -1,6 +1,6 @@
 {
   "name": "jdkswitch",
-  "version": "0.1.2",
+  "version": "0.2.0",
   "description": "Switches JDKs on macOS.",
   "license": "MIT",
   "author": {
