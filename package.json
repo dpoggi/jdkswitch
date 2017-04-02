@@ -16,7 +16,7 @@
     "darwin"
   ],
   "engines": {
-    "node": ">= 6.0.0"
+    "node": ">= 4.2.0"
   },
   "files": [
     "bin",
