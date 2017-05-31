@@ -12,7 +12,7 @@ const jdks = [new JDK(null)].concat(JDK.all);
 const currentJdkIndex = jdks.findIndex(jdk => jdk.selected);
 
 const tableRows = table(
-  jdks.map(jdk => jdk.tableRow),
+  jdks.map(jdk => jdk.view.tableRow),
   {
     hsep: "      ",
     stringLength: s => chalk.stripColor(s).length,
@@ -38,7 +38,7 @@ inquirer.prompt([
 
   jdk.select();
 
-  console.log(`\n${jdk.selectedMessage}`);
+  console.log(`\n${jdk.view.selectedMessage}`);
 }).catch(err => {
   console.log(`\n${err}`);
 
