@@ -1,7 +1,7 @@
 {
   "type": "module",
   "name": "jdkswitch",
-  "version": "0.2.6",
+  "version": "0.2.7",
   "description": "Text mode menu for managing a JAVA_HOME symlink on macOS.",
   "license": "0BSD",
   "author": {
