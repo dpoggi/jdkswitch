@@ -2,14 +2,12 @@
 
 ## Description
 
-A text mode menu for managing the symbolic link at `/Library/Java/Home` on macOS.
+A text mode menu for managing a symbolic link at `/Library/Java/Home` on macOS.
 
 ## Getting Started
 
 ```sh
-npm install -g jdkswitch
-hash -r
-jdkswitch
+npm install --global jdkswitch
 ```
 
 ## Screenshot
@@ -18,8 +16,8 @@ jdkswitch
 
 ## License
 
-[MIT License](https://opensource.org/licenses/MIT)
+[BSD0 License](https://opensource.org/licenses/0BSD)
 
 ## Copyright
 
-Copyright &copy; 2017&ndash;2018 Dan Poggi
+Copyright &copy; 2017&ndash;2021 by Dan Poggi
