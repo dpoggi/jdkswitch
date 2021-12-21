@@ -15,7 +15,7 @@ const tableOptions = {
   hsep: "      ",
   stringLength: (str) => stripAnsi(str).length,
 };
-const tableRows = table(jdks.map(jdk => jdk.view.tableRow), tableOptions)
+const tableRows = table(jdks.map((jdk) => jdk.view.tableRow), tableOptions)
   .split("\n")
   .map((row, i) => {
     return {
@@ -35,12 +35,12 @@ inquirer
       default: selectedJDKIndex,
     },
   ])
-  .then(answers => {
+  .then((answers) => {
     const jdk = jdks[answers["jdk"]];
     jdk.select();
     console.log(`\n${jdk.view.selectedMessage}`);
   })
-  .catch(err => {
+  .catch((err) => {
     console.log(`\n${err}`);
     process.exit(1);
   });
