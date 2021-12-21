@@ -16,7 +16,7 @@ npm install --global jdkswitch
 
 ## License
 
-[BSD0 License](https://opensource.org/licenses/0BSD)
+[BSD Zero Clause License](https://spdx.org/licenses/0BSD.html)
 
 ## Copyright
 

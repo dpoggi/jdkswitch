@@ -1,9 +1,9 @@
 {
   "type": "module",
   "name": "jdkswitch",
-  "version": "0.2.4",
-  "description": "A text mode menu for managing the symbolic link at /Library/Java/Home on macOS.",
-  "license": "MIT",
+  "version": "0.2.5",
+  "description": "Text mode menu for managing a JAVA_HOME symlink on macOS.",
+  "license": "0BSD",
   "author": {
     "name": "Dan Poggi",
     "email": "dan.poggi@gmail.com"
