@@ -28,7 +28,7 @@
   },
   "dependencies": {
     "chalk": "^5.0.0",
-    "inquirer": "^6.5.2",
+    "inquirer": "^8.2.0",
     "plist": "^3.0.4",
     "strip-ansi": "^7.0.1",
     "text-table": "^0.2.0"
