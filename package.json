@@ -1,4 +1,5 @@
 {
+  "type": "module",
   "name": "jdkswitch",
   "version": "0.2.4",
   "description": "A text mode menu for managing the symbolic link at /Library/Java/Home on macOS.",
