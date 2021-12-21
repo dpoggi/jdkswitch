@@ -8,14 +8,14 @@ import table from "text-table";
 
 import { JDK } from "../lib/jdk.js";
 
-const jdks = [new JDK(null), ...JDK.all];
-const selectedJDKIndex = jdks.findIndex((jdk) => jdk.selected);
+const jdks = [new JDK(null), ...(JDK.all)];
+const selectedJDKIndex = jdks.findIndex(jdk => jdk.selected);
 
 const tableOptions = {
   hsep: "      ",
-  stringLength: (str) => stripAnsi(str).length,
+  stringLength: str => stripAnsi(str).length,
 };
-const tableRows = table(jdks.map((jdk) => jdk.view.tableRow), tableOptions)
+const tableRows = table(jdks.map(jdk => jdk.view.tableRow), tableOptions)
   .split("\n")
   .map((row, i) => {
     return {
@@ -35,12 +35,12 @@ inquirer
       default: selectedJDKIndex,
     },
   ])
-  .then((answers) => {
+  .then(answers => {
     const jdk = jdks[answers["jdk"]];
     jdk.select();
     console.log(`\n${jdk.view.selectedMessage}`);
   })
-  .catch((err) => {
+  .catch(err => {
     console.log(`\n${err}`);
     process.exit(1);
   });
