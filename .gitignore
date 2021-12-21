@@ -1,6 +1,18 @@
-/.idea/
-/*.iml
-/*.log
-/node_modules/
-/.nvmrc
-/yarn.lock
+# General
+*~
+._*
+*.DS_Store
+Desktop.ini
+Thumbs.db
+
+# JavaScript
+node_modules/
+*.log
+.nvmrc
+yarn.lock
+
+# IntelliJ
+.idea/
+*.iml
+*.ipr
+*.iws

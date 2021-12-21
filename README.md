@@ -1,14 +1,14 @@
 # jdkswitch
 
-## About
+## Description
 
-Switches JDKs on macOS.
+A text mode menu for managing the symbolic link at `/Library/Java/Home` on macOS.
 
-## Usage
+## Getting Started
 
-```bash
+```sh
 npm install -g jdkswitch
-
+hash -r
 jdkswitch
 ```
 
@@ -18,4 +18,8 @@ jdkswitch
 
 ## License
 
-MIT license, see LICENSE for details.
+[MIT License](https://opensource.org/licenses/MIT)
+
+## Copyright
+
+Copyright &copy; 2017&ndash;2018 Dan Poggi

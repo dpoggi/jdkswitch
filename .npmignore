@@ -3,4 +3,5 @@
 !lib/
 !LICENSE
 !package.json
-!README
+!package-lock.json
+!README.md
