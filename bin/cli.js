@@ -2,15 +2,14 @@
 
 "use strict";
 
-const chalk = require("chalk");
-const inquirer = require("inquirer");
-const stripAnsi = require("strip-ansi");
-const table = require("text-table");
+import inquirer from "inquirer";
+import stripAnsi from "strip-ansi";
+import table from "text-table";
 
-const JDK = require("../lib/jdk");
+import { JDK } from "../lib/jdk.js";
 
 const jdks = [new JDK(null), ...JDK.all];
-const selectedJDKIndex = jdks.findIndex(jdk => jdk.selected);
+const selectedJDKIndex = jdks.findIndex((jdk) => jdk.selected);
 
 const tableOptions = {
   hsep: "      ",
